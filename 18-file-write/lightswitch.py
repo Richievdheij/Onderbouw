@@ -8,9 +8,7 @@ if not os.path.exists('actions.log'):
     
     gitignore.close()
 
-
 action_log = open('actions.log', 'a')
-
 
 # Makes the button
 def make_button():
@@ -19,7 +17,6 @@ def make_button():
     window['bg'] = "black" 
 
     return button
-
 
 # Button input reaction
 def switch_light():
@@ -34,7 +31,6 @@ def switch_light():
         button['text'] = "Switch light off"
         window['bg'] = "yellow" # Change window background color
         print("Light is on") # Change button text
-
 
 if __name__ == "__main__":
     button = make_button()
